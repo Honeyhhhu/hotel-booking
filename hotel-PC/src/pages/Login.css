@@ -1,0 +1,57 @@
+/* src/pages/Login/Login.css */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 400px;
+  /* background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%); */
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.login-card .ant-card-head {
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.login-card .ant-card-head-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.site-form-item-icon {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.login-extra {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login-link {
+  color: #1890ff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #40a9ff;
+  text-decoration: underline;
+}
+
+/* 响应式适配 */
+@media (max-width: 576px) {
+  .login-card {
+    max-width: 100%;
+  }
+}
