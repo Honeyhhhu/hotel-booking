@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* 携程风格主题色 - Ctrip Theme (蓝色主色) */
+@theme {
+  /* 主色 - 携程蓝 */
+  --color-primary: #2681FF;
+  --color-primary-light: #4A9AFF;
+  --color-primary-dark: #1A6FE0;
+  --color-primary-bg: #EBF3FF;
+  /* 价格/促销 - 橙色 */
+  --color-price: #FF6600;
+  --color-price-light: #FF8C00;
+  /* 标签色 */
+  --color-tag-orange: #FF6600;
+  --color-tag-orange-bg: #FFF4EB;
+  --color-tag-green: #00B578;
+  --color-tag-green-bg: #E8F8F0;
+  --color-tag-blue: #0086F6;
+  --color-tag-blue-bg: #E8F4FF;
+  --color-tag-red: #FF4D4F;
+  --color-tag-red-bg: #FFF1F0;
+  --color-rating-bg: #2681FF;
+  --color-star: #FF8C00;
+  /* 文字色 */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #666666;
+  --color-text-light: #999999;
+  --color-text-placeholder: #CCCCCC;
+  /* 边框与背景 */
+  --color-border: #F0F0F0;
+  --color-bg-page: #F5F5F5;
+  --color-bg-card: #FFFFFF;
+  --color-bg-muted: #F7F7F7;
+  --color-bg-subtle: #FAFAFA;
+  /* 主按钮渐变 - 携程蓝 */
+  --background-image-gradient-primary: linear-gradient(135deg, #4A9AFF 0%, #2681FF 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background-color: var(--color-bg-page);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  position: relative;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* antd-mobile 主题定制 - 携程蓝色 */
+:root:root {
+  --adm-color-primary: #2681FF;
+  --adm-color-primary-dark: #1A6FE0;
+  --adm-color-success: #00B578;
+  --adm-color-warning: #FF8C00;
+  --adm-color-danger: #FF4D4F;
+  --adm-border-color: #F0F0F0;
+  --adm-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
